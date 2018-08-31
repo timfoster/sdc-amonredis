@@ -10,8 +10,7 @@
 
 NAME=amonredis
 
-# XXX timf comment out during eng development
-#REQUIRE_ENG := $(shell git submodule update --init deps/eng)
+REQUIRE_ENG := $(shell git submodule update --init deps/eng)
 include ./deps/eng/tools/mk/Makefile.defs
 TOP ?= $(error Unable to access eng.git submodule Makefiles.)
 
