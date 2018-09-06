@@ -32,6 +32,6 @@ cp -R ${ROOT}/boot/* ${tmpdir}/root/opt/smartdc/boot/
 mkdir -p ${tmpdir}/root/opt/smartdc/amonredis
 cp -PR ${ROOT}/sapi_manifests ${tmpdir}/root/opt/smartdc/amonredis
 
-(cd ${tmpdir}; tar -I pigz -cf ${ROOT}/${RELEASE_TARBALL} root site)
+(cd ${tmpdir}; gtar -I pigz -cf ${ROOT}/${RELEASE_TARBALL} root site)
 
 rm -rf ${tmpdir}
